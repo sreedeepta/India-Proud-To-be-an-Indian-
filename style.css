@@ -1,0 +1,95 @@
+body{
+  text-align: center;
+}
+
+  #contact iframe {
+    width: 100%;
+}
+
+.contact_1 h3 {
+    display: inline;
+}
+
+.contact_1 a {
+    text-shadow: none;
+}
+
+input {
+    background: grey
+}
+
+.travel_maindiv {
+    border: 1px solid grey;
+    padding-left: 0px;
+    padding-right: 0px;
+    float: none;
+}
+
+.travel_maindiv img {
+    width: 100%;
+}
+
+.travel_maindiv h5,
+.travel_maindiv p {
+    margin-left: 20px;
+}
+
+.travel_maindiv hr {
+    width: 230px;
+}
+
+.movie_head {
+    font-size: 20px;
+    padding: 6px 22px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    width: 100%;
+    display: inline-block;
+}
+
+.movie_head i {
+    float: right;
+}
+
+.movie_text span {
+    color: #ff7700;
+}
+
+.book {
+    cursor: pointer;
+}
+.modal-content{
+    margin-top: 100px;
+}
+.img_modal{
+    display: inline-block;
+}
+.p_modal{
+    margin-top: 10px
+}
+.modal-body{
+    text-align: center;
+}
+.environment_li{
+    margin-top: 13px;
+}
+.environment_li h4{
+    border-bottom: 1px solid white;
+    padding: 8px;
+}
+#blackpink{
+    text-align: center;
+}
+#bts{
+    text-align: center;
+}
+#btbla{
+    text-align: center;
+}
+#mahi{
+    width: 300px;
+}
+#sss{
+    width: 200px;
+    height: 300px;
+}
