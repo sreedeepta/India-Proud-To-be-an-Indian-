@@ -1,0 +1,331 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar-inverse" style="position:sticky;top:0;z-index:99999">
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Mahi</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="#travel">Travel</a></li>
+                <li><a href="#movies">Band & Group which I 💜</a></li>
+                <li><a href="#environment">A Quote</a></li>
+                <li><a href="#books">Quotes of Most Loved Band & Group</a></li>
+                <li><a href="#aboutme">ABOUT ME</a></li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <div class="container">
+
+        <div class="page-header" id="travel">
+            <h2 class="text-capitalize">Places must visit</h2>
+        </div>
+
+        <center>
+            <div class="travel_maindiv">
+                <img class="img-responsive" src="data:image/jpeg;base64,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">
+                <h4 class="text-capitalize"><kbd>South Korea</kbd></h4>
+                <hr>
+                <h5 class="text-success text-left text-capitalize">I Have not visited</h5>
+                <p class="text-muted text-left">South Korea, an East Asian nation on the southern half of the Korean Peninsula, shares one of the world’s most heavily militarized borders with North Korea. It’s equally known for its green, hilly countryside dotted with cherry trees and centuries-old Buddhist temples, plus its coastal fishing villages, sub-tropical islands and high-tech cities such as Seoul, the capital.
+Capital: Seoul
+Dialing code: +82
+President: Moon Jae-in
+Currency: South Korean won
+Population: 5.17 crores (2019)</p>
+            </div>
+        </center><br>
+
+        <center>
+            <div class="travel_maindiv">
+                <img class="img-responsive" src="https://www.lowyinstitute.org/sites/default/files/GettyImages-1134201090.jpeg">
+                <h4 class="text-capitalize"><kbd>Seoul (in South Korea)</kbd></h4>
+                <hr>
+                <h5 class="text-success text-left text-capitalize">My dream, I Have not visited</h5>
+                <p class="text-muted text-left">Seoul, the capital of South Korea, is a huge metropolis where modern skyscrapers, high-tech subways and pop culture meet Buddhist temples, palaces and street markets. Notable attractions include futuristic Dongdaemun Design Plaza, a convention hall with curving architecture and a rooftop park; Gyeongbokgung Palace, which once had more than 7,000 rooms; and Jogyesa Temple, site of ancient locust and pine trees.
+Area: 605.2 km²
+Elevation: 38 m
+Population: 97.8 lakhs (2017) United Nations
+Mayor: Oh Se-hoon</p>
+            </div>
+        </center><br><br>
+
+        
+
+        <div class="page-header" id="movies">
+            <h2 class="text-capitalize">Band & Group which I 💜</h2>
+            <p>Click on the blue bar to see info</p>
+        </div>
+        <!-- start copy here-->
+        <div class="bg-primary movie_head" data-toggle="collapse" data-target="#endgame">
+            <span class="glyphicon glyphicon-film"></span> BTS <i class="fa fa-sort-desc"></i>
+        </div>
+
+        <div id="endgame" class="collapse">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                <img src="https://i.pinimg.com/originals/e4/90/27/e490273108f090aa1b28f7632ad43307.png" class="img-responsive img-thumbnail">
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 movie_text">
+                <h5 class="text-success text-left text-capitalize">Excellent K-POP boy band
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+
+                </h5>
+                <p>BTS, also known as the Bangtan Boys, is a seven-member South Korean boy band that began formation in 2010 and debuted in 2013, 12th June under Big Hit Entertainment. The septet—composed of Jin, Suga, J-Hope, RM, Jimin, V, and Jungkook. There fandom name is ARMY.</p>
+            </div>
+        </div>
+
+        <!--copy end here-->
+
+        <!-- start copy here-->
+        <div class="bg-primary movie_head" data-toggle="collapse" data-target="#lionking">
+            <span class="glyphicon glyphicon-film"></span> BLΛƆKPIИK <i class="fa fa-sort-desc"></i>
+        </div>
+
+        <div id="lionking" class="collapse">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                <img src="https://img.i-scmp.com/cdn-cgi/image/fit=contain,width=1098,format=auto/sites/default/files/styles/1200x800/public/d8/images/methode/2020/06/10/8e352e96-a96e-11ea-bf1b-7541df8028ff_image_hires_114359.jpg?itok=X0DUcXW-&v=1591760644" class="img-responsive img-thumbnail">
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 movie_text">
+                <h5 class="text-success text-left text-capitalize">Excellent K-POP Girl Group
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+
+                </h5>
+                <p>Blackpink is a South Korean girl group formed by YG Entertainment, consisting of members Jisoo, Jennie, Rosé, and Lisa. They debuted on August 8th, 2016. There fandom name is BLINK.</p>
+            </div>
+        </div>
+
+        <!--copy end here-->
+
+
+
+        <div class="page-header col-lg-12 col-md-12 col-sm-12 col-xs-12" id="environment">
+            <h2 class="text-capitalize"></h2>
+        </div>
+
+        
+        
+       <center id="btbla">
+        <div class="page-header col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h2 class="text-capitalize">Quotes</h2>
+        </div>
+        
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <h3>George Bernhard Shaw</h3>
+           <i> <h4>
+            <mark class="header_entr">
+                <sup><i class="fa fa-quote-left"></i></sup>
+                A life spent making mistakes is not only more honorable, but more useful than a life spent doing nothing.
+                <sup><i class="fa fa-quote-right"></i></sup>
+                
+                </mark>
+            </h4></i>
+        </div>
+
+
+        <div class="page-header col-lg-12 col-md-12 col-sm-12 col-xs-12" id="books">
+            <h2 class="text-capitalize">List of Quotes by most loved band & group</h2>
+            <p>Click on the image to see qoutes</p>
+        </div>
+
+        <!--copy-->
+        <center id="bts">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 book" data-toggle="modal" data-target="#book1">
+            <img src="https://st1.bollywoodlife.com/wp-content/uploads/2021/06/SSR-4-1-1.png" class="img-responsive">
+            <hr>
+            <p class="text-primary">BTS</p>
+        </div>
+        <div class="modal fade" id="book1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">BTS Qoutes</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img src="https://st1.bollywoodlife.com/wp-content/uploads/2021/06/SSR-4-1-1.png" class="img-responsive img_modal">
+                        <p class="p_modal">There's no doubt that all the BTS boys are super talented. They write and produce much of their own music and can boast that they're the first band since the Beatles to have three albums reach the number one spot in less than a year. Who's counting numbers, though? What really matters is that the Bangtan Boys work really hard at what they do. They do their best to deliver the absolute best to their fans. Whether it's nailing the choreography for their next performance or releasing a video game with content made specifically for the ARMY, BTS is rarely not working. Their work ethic isn't the only thing that has earned them the admiration of millions of fans. As individuals, they're also just inspiring af and they prove that in every interview and sonf lyric. If you haven't already noticed that, here's a list of BTS quotes that just how relatable the boys really are.
+                            <br>
+                            <a href="https://www.seventeen.com/celebrity/music/a28928893/best-bts-quotes/"><b>BEST QOUTES BY BTS</b></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+            </center>
+        <!--end-->
+           
+           
+           <!--copy-->
+        <center id="bts">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 book" data-toggle="modal" data-target="#book2">
+            <img src="https://rollingstoneindia.com/wp-content/uploads/2020/08/Dynamite_Group-BTS.jpg" class="img-responsive">
+            <hr>
+            <p class="text-primary">BTS ALBUMS</p>
+        </div>
+        <div class="modal fade" id="book2">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">BTS ALBUMS</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img src="https://rollingstoneindia.com/wp-content/uploads/2020/08/Dynamite_Group-BTS.jpg" class="img-responsive img_modal">
+                        <p class="p_modal">Click the link to see BTS ALBUMS
+                            <br>
+                            <a href="https://ibighit.com/bts/eng/discography/"><b>BTS ALBUMS</b></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+            </center>
+        <!--end-->
+
+
+        <!--copy-->
+        <center id="blackpink">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 book" data-toggle="modal" data-target="#book3">
+            <img src="https://i.quotev.com/img/q/u/18/7/10/lglucfafqk.jpg" class="img-responsive">
+            <hr>
+            <p class="text-primary">BLΛƆKPIИK</p>
+        </div>
+        <div class="modal fade" id="book3">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">BLΛƆKPIИK QOUTES</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img src="https://i.quotev.com/img/q/u/18/7/10/lglucfafqk.jpg" class="img-responsive img_modal">
+                        <p class="p_modal">Blackpink (Korean: 블랙핑크; commonly stylized as BLACKPINK or BLΛƆKPIИK) is a South Korean girl group formed by YG Entertainment, consisting of members Jisoo, Jennie, Rosé, and Lisa. The group debuted in August 2016 with their single album Square One, which featured "Whistle" and "Boombayah", their first number-one entries on South Korea's Gaon Digital Chart and the Billboard World Digital Song Sales chart, respectively.
+                            <br>
+                            <a href="https://www.pinterest.com/dewsinghhiera/blink-quotes/"><b>BEST QOUTES BY BLΛƆKPIИK</b></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+            </center>
+           </center>
+        <!--end-->
+        
+        
+        
+        <!--copy-->
+        <center id="blackpink">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 book" data-toggle="modal" data-target="#book4">
+            <img src="https://th.bing.com/th/id/OIP.A13DoEmqiJKwZOmaHIzgQwHaEw?pid=ImgDet&rs=1" class="img-responsive">
+            <hr>
+            <p class="text-primary">BLΛƆKPIИK ALBUMS</p>
+        </div>
+        <div class="modal fade" id="book4">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">BLΛƆKPIИK ALBUMS</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img src="https://th.bing.com/th/id/OIP.A13DoEmqiJKwZOmaHIzgQwHaEw?pid=ImgDet&rs=1" class="img-responsive img_modal">
+                        <p class="p_modal">Click the link to see BLΛƆKPIИK ALBUMS
+                            <br>
+                            <a href="https://www.bing.com/images/search?q=blackpink%20albums&qs=n&form=QBIR&sp=-1&pq=blackpink%20albums&sc=7-16&cvid=A9F2E01880D94081849C73FDD4240BFB&first=1&tsc=ImageBasicHover"><b>BLΛƆKPIИK ALBUMS</b></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+            </center>
+           </center>
+        <!--end-->
+        
+
+
+
+        
+
+
+
+
+    </div>
+
+    <section id="aboutme">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15134.217771456475!2d73.82372819999999!3d18.5038307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bfeb55016893%3A0x302993dafe3d8905!2sIndira%20Heights%2C%20Bharatkunj%20-2%2C%20Erandwane%2C%20Pune%2C%20Maharashtra%20411038!5e0!3m2!1sen!2sin!4v1624723685890!5m2!1sen!2sin" width="1000" height="700" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <p>I live here</p>
+        
+        <ul class="list-group">
+            <li class="list-group-item list-group-item-success col-lg-12 col-md-12 col-sm-12 col-xs-12 environment_li">
+                <h4>About me</h4>
+                <img src="https://i.pinimg.com/736x/37/66/c7/3766c77256d7cc71284976992624ed2b.jpg" id="mahi" class="img_responsive col-lg-5 col-md-5 col-sm-5 col-xs-12" >
+                <p class="list-group-item-text col-lg-7 col-md-7 col-sm-7 col-xs-12">Hey there this is me Mahi (K-POP-lover). <br><br>My bias from BTS is V,  & wrecked bias from BTS is Jimin.<br><br> My bias from BLΛƆKPIИK is Jennie, & wrecked bias is Jisoo.<br><br> I'm an orange hat coder.<br><br> My fav colors are blue & purple 💙💜,<br><br> I have many hobbies like: Coding <br><br>(I 💜 making apps & websites), Singing (Rap), Dancing (western), <br><br>Gymnastics, Drawing, Painting, ART/CRAFT, and I play Tabla very well. <br><br>My fav food is Pasta I just love it!</p><img src="https://i.pinimg.com/736x/e6/92/fe/e692fe2bef601bf4760425bd62118117.jpg" id="sss">
+            </li>
+
+
+        </ul>
+        
+        <p>
+        
+        </p>
+
+
+        
+        <div class="contact_1">
+
+            
+            <a href="mailto:my@gmail.com?Subject=Hi">
+                <h5><i class="fa fa-envelope"></i>&nbsp;&nbsp;mygmailid@gmail.com</h5>
+            </a>
+          
+
+            <a href="#">
+                <h5><i class="fa fa-instagram"></i>&nbsp;&nbsp;myinstagramid</h5>
+            </a>
+          <p>(There is no insta id of mine)<br><br> </p>
+          <p><svg viewBox="0 0 496 512" width="100" title="laugh-wink">
+  <path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm20.1 198.1c4-25.2 34.2-42.1 59.9-42.1s55.9 16.9 59.9 42.1c1.7 11.1-11.4 18.3-19.8 10.8l-9.5-8.5c-14.8-13.2-46.2-13.2-61 0L288 217c-8.4 7.4-21.6.3-19.9-10.9zM168 160c17.7 0 32 14.3 32 32s-14.3 32-32 32-32-14.3-32-32 14.3-32 32-32zm230.9 146C390 377 329.4 432 256 432h-16c-73.4 0-134-55-142.9-126-1.2-9.5 6.3-18 15.9-18h270c9.6 0 17.1 8.4 15.9 18z" />
+            </svg></p>
+        </div>
+    </section>
+
+
+</body>
+
+</html>
